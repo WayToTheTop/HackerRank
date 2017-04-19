@@ -1,4 +1,4 @@
---https://www.hackerrank.com/challenges/challenges
+--https://www.hackerrank.com/challenges/contest-leaderboard
 SELECT h.hacker_id, h.name, SUM(t.max_score) AS total
 FROM (SELECT hacker_id, challenge_id, MAX(score) AS max_score FROM submissions GROUP BY 1,2) as t, hackers AS h 
 WHERE h.hacker_id = t.hacker_id
