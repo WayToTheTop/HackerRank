@@ -1,4 +1,4 @@
---https://www.hackerrank.com/challenges/challenges/submissions/database/42627135
+--https://www.hackerrank.com/challenges/challenges
 SELECT a.hacker_id, a.name, COUNT(*) as total 
 FROM hackers AS a, challenges AS b WHERE a.hacker_id = b.hacker_id
 GROUP BY a.hacker_id, a.name
